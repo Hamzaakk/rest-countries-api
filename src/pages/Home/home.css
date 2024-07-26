@@ -1,0 +1,39 @@
+:root {
+    --light-bg: hsl(0, 0%, 98%);
+    --light-text: hsl(200, 15%, 8%);
+    --light-elements: hsl(0, 0%, 100%);
+    --light-input: hsl(0, 0%, 52%);
+
+    --dark-bg: hsl(207, 26%, 17%);
+    --dark-text: hsl(0, 0%, 100%);
+    --dark-elements: hsl(209, 23%, 22%);
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.App {
+    min-height: 100vh;
+}
+
+main {
+    padding: 3rem 5%;
+}
+
+@media (min-width: 1440px) {
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
